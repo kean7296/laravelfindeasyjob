@@ -19,7 +19,7 @@ use Illuminate\Support\Facades\Route;
 
 
 
-Route::get('/', [ListingController::class, 'index']);
+Route::get('/', [ListingController::class, 'index'])->name('dashboard');
 
 
 Route::get('/login', [UserController::class, 'index'])->name('login')->middleware('guest');

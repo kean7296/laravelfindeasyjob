@@ -47,13 +47,7 @@ class ListingController extends Controller
 
         Listing::create($fields);
 
-        if ($request->secure()) {
-            $redirect = redirect()->secure('/');
-        } else {
-            $redirect = redirect('/');
-        }
-
-        return $redirect->with('success', 'Successfully posted a job');
+        return redirect(route('dashboard'))->with('success', 'Successfully posted a job');
     }
 
     public function edit($id) {
@@ -81,13 +75,7 @@ class ListingController extends Controller
 
         $post = Listing::find(decrypt($id))->update($fields);
 
-        if ($request->secure()) {
-            $redirect = redirect()->secure('/');
-        } else {
-            $redirect = redirect('/');
-        }
-
-        return $redirect->with('success', 'Job posted update successfully');
+        return redirect(route('dashboard'))->with('success', 'Job posted update successfully');
     }
 
     public function destroy($id) {
@@ -98,13 +86,7 @@ class ListingController extends Controller
 
         $list->delete();
 
-        if (request()->secure()) {
-            $redirect = redirect()->secure('/');
-        } else {
-            $redirect = redirect('/');
-        }
-
-        return $redirect->with('success', 'Deleted post successfully');
+        return redirect(route('dashboard'))->with('success', 'Deleted post successfully');
     }
 
     public function manage() {
