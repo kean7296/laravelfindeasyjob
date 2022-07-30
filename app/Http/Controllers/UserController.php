@@ -29,7 +29,7 @@ class UserController extends Controller
 
         auth()->login($user);
 
-        return redirect(route('dashboard'))->with('success', 'Users successfully registered and authomatically login');
+        return redirect(config('app.url'))->with('success', 'Users successfully registered and authomatically login');
     }
 
     public function logout(Request $request) {
@@ -38,7 +38,7 @@ class UserController extends Controller
         $request->session()->invalidate();
         $request->session()->regenerateToken();
 
-        return redirect(route('dashboard'))->with('success', 'Logout successfully');
+        return redirect(config('app.url'))->with('success', 'Logout successfully');
     }
 
     public function login(Request $request) {
@@ -50,7 +50,7 @@ class UserController extends Controller
         if (auth()->attempt($fields)) {
             $request->session()->regenerate();
 
-            return redirect(route('dashboard'))->with('success', 'Login successful!'); 
+            return redirect(config('app.url'))->with('success', 'Login successful!'); 
         }
 
         return back()->withErrors(['email' => 'Invalid credentials'])->onlyInput('email');
