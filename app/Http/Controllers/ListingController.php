@@ -4,7 +4,6 @@ namespace App\Http\Controllers;
 
 use App\Models\Listing;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Redirect;
 
 class ListingController extends Controller
 {

@@ -15,7 +15,7 @@
         <link rel="stylesheet" href="{{asset("build/".$manifest['resources/css/app.css']['file'])}}">
         <script type="module" src="{{asset('build/'.$manifest['resources/js/app.js']['file'])}}"></script>
     @else
-        @vite(['resources/css/app.css', 'resources/js/app.js']) 
+        @vite(['resources/js/app.js', 'resources/css/app.css']) 
     @endproduction
 </head>
 <body class="mb-20 font-cabinet text-text">
@@ -83,7 +83,7 @@
         {{$slot}}
     </main>
     <footer class="fixed bottom-0 left-0 w-full flex items-center bg-primary text-text-light h-10 mt-24 justify-center">
-        <p class="ml-2">Copyright &copy; 2022, All Rights reserved</p>
+        <p class="ml-2">Copyrightsd &copy; 2022, All Rights reserved</p>
     </footer>
 </body>
 </html>
