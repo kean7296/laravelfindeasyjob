@@ -1,5 +1,5 @@
 <x-layout>
-    <x-card class="p-3 md:p-10 max-w-lg mx-auto mt-24">
+    <x-card class="p-3 md:p-10 max-w-lg mx-auto mt-8">
         <header class="text-center">
             <h2 class="text-2xl font-bold uppercase mb-1">Sign up</h2>
             <p class="mb-4">Create an account to post jobs</p>

@@ -8,8 +8,8 @@
     <link rel="icon" type="image/png" sizes="32x32" href="{{asset('images/logo.png')}}">
     <link rel="icon" type="image/png" sizes="16x16" href="{{asset('images/icon.png')}}">
     <link rel="stylesheet" href="{{asset('css/cabinet-grotesk.css')}}">
-    {{-- @vite(['resources/css/app.css', 'resources/js/app.js']) --}} 
-    <link rel="stylesheet" href="{{asset('build/assets/app.a9fdb9f8.css')}}" type="text/css">
+    {{-- @vite(['resources/css/app.css', 'resources/js/app.js'])  --}}
+    <link rel="stylesheet" href="{{asset('build/assets/app.adf1c325.css')}}" type="text/css">
 </head>
 <body class="mb-20 font-cabinet text-text">
     <x-flash-message />
