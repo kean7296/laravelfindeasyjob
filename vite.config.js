@@ -8,7 +8,20 @@ export default defineConfig({
                 'resources/css/app.css',
                 'resources/js/app.js',
             ],
+            output: [],
             refresh: ['resource/views/**'],
         }),
     ],
+    build: {
+        manifest: true,
+        outDir: 'public/build',
+        rollupOptions: {
+            input: [
+                'resources/js/app.js',
+                'resources/css/app.css'
+            ],
+        },  
+    }
 });
+
+

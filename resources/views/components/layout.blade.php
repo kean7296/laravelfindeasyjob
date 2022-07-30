@@ -8,8 +8,15 @@
     <link rel="icon" type="image/png" sizes="32x32" href="{{asset('images/logo.png')}}">
     <link rel="icon" type="image/png" sizes="16x16" href="{{asset('images/icon.png')}}">
     <link rel="stylesheet" href="{{asset('css/cabinet-grotesk.css')}}">
-    {{-- @vite(['resources/css/app.css', 'resources/js/app.js'])  --}}
-    <link rel="stylesheet" href="{{asset('build/assets/app.adf1c325.css')}}" type="text/css">
+    @production
+        @php
+            $manifest = json_decode(file_get_contents(public_path('build/manifest.json')), true);
+        @endphp
+        <link rel="stylesheet" href="{{asset("build/".$manifest['resources/css/app.css']['file'])}}">
+        <script type="module" src="{{asset('build/'.$manifest['resources/js/app.js']['file'])}}"></script>
+    @else
+        @vite(['resources/css/app.css', 'resources/js/app.js']) 
+    @endproduction
 </head>
 <body class="mb-20 font-cabinet text-text">
     <x-flash-message />
@@ -78,6 +85,5 @@
     <footer class="fixed bottom-0 left-0 w-full flex items-center bg-primary text-text-light h-10 mt-24 justify-center">
         <p class="ml-2">Copyright &copy; 2022, All Rights reserved</p>
     </footer>
-    <script src="{{asset('build/assets/app.99e705d3.js')}}"></script>
 </body>
 </html>
