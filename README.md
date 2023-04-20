@@ -27,3 +27,18 @@ to run db migration  with seed
 
 ### Application Deployed at 
 https://findeasyjob.herokuapp.com/
+
+![work2](https://kenneth-andales.github.io/portfolio/images/work2/1.png)
+![work2](https://kenneth-andales.github.io/portfolio/images/work2/2.png)
+![work2](https://kenneth-andales.github.io/portfolio/images/work2/3.png)
+![work2](https://kenneth-andales.github.io/portfolio/images/work2/4.png)
+![work2](https://kenneth-andales.github.io/portfolio/images/work2/5.png)
+![work2](https://kenneth-andales.github.io/portfolio/images/work2/6.png)
+![work2](https://kenneth-andales.github.io/portfolio/images/work2/7.png)
+![work2](https://kenneth-andales.github.io/portfolio/images/work2/8.png)
+![work2](https://kenneth-andales.github.io/portfolio/images/work2/9.png)
+![work2](https://kenneth-andales.github.io/portfolio/images/work2/10.png)
+![work2](https://kenneth-andales.github.io/portfolio/images/work2/11.png)
+![work2](https://kenneth-andales.github.io/portfolio/images/work2/12.png)
+![work2](https://kenneth-andales.github.io/portfolio/images/work2/13.png)
+![work2](https://kenneth-andales.github.io/portfolio/images/work2/error.png)
